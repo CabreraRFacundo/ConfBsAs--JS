@@ -1,0 +1,62 @@
+nav {
+    background-color: rgb(53, 58, 64);
+    height: 10vh;
+}
+h1{
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+h5 {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.numero {
+    font-weight: bold;
+}
+
+#pie {
+    padding: 1vw;
+    justify-content: center;
+    color: white;
+    background-color: rgb(29, 67, 88);
+}
+
+#activo {
+    color: white;
+}
+
+.nav-link {
+    color: rgb(146, 155, 165);
+}
+
+#tickets {
+    color: rgb(73, 180, 70);
+}
+
+#fila {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+#formulario{
+    margin-left: 6vw;
+    margin-right: 6vw;
+    margin-bottom: 4vh;
+}
+
+.btn-primary{
+    background-color: rgb(150, 201, 62);
+    border: none;
+    width: 100%;
+}
