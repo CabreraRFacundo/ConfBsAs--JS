@@ -6,6 +6,9 @@ let precioTicket = 200;
 let precioTotal = 0;
 
 document.getElementById("boton").onclick = function () {
+    var precioTicket = 200;
+    var precioTotal = 0;
+    
     entradas = document.getElementById("cantidad_entradas").value;
     console.log(entradas);
     
@@ -15,23 +18,25 @@ document.getElementById("boton").onclick = function () {
     categoria = document.getElementById("categoria").selectedIndex;
     console.log(categoria);
 
-//agregar el precio por ticker antes de sacar el precio total
-
     if (categoria == 1) {
-        precioTotal = (entradas * 80) / 100;
+        precioTotal = (precioTicket * 80) / 100;
 
         console.log(precioTotal);
     } else if (categoria == 2) {
-        precioTotal = (entradas * 50) / 100;
+        precioTotal = (precioTicket * 50) / 100;
 
         console.log(precioTotal);
     } else if (categoria == 3) {
-        precioTotal = (entradas * 15) / 100;
+        precioTotal = (precioTicket * 15) / 100;
 
         console.log(precioTotal);
     } else {
         console.log("categoria invalida");
     }
+};
+
+document.getElementById("restart").onclick = function () {
+    document.getElementById("formulario").reset();
 };
 
 
