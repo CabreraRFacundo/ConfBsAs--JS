@@ -2,21 +2,20 @@
 
 let entradas;
 let categoria;
-let precioTicket = 200;
-let precioTotal = 0;
+
 
 document.getElementById("boton").onclick = function () {
     var precioTicket = 200;
     var precioTotal = 0;
     
     entradas = document.getElementById("cantidad_entradas").value;
-    console.log(entradas);
+    //console.log(entradas);
     
     precioTicket = precioTicket * entradas;
-    console.log(precioTicket);
+    //console.log(precioTicket);
 
     categoria = document.getElementById("categoria").selectedIndex;
-    console.log(categoria);
+    //console.log(categoria);
 
     if (categoria == 1) {
         precioTotal = (precioTicket * 80) / 100;
@@ -33,6 +32,8 @@ document.getElementById("boton").onclick = function () {
     } else {
         console.log("categoria invalida");
     }
+
+    document.getElementById("alerta").innerHTML = "Total a pagar: $" + precioTotal;
 };
 
 document.getElementById("restart").onclick = function () {
