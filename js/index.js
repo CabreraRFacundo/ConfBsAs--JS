@@ -18,7 +18,7 @@ document.getElementById("boton").onclick = function () {
     //console.log(categoria);
 
     if (categoria == 1) {
-        precioTotal = (precioTicket * 80) / 100;
+        precioTotal = (precioTicket * 15) / 100;
 
         console.log(precioTotal);
     } else if (categoria == 2) {
@@ -26,7 +26,7 @@ document.getElementById("boton").onclick = function () {
 
         console.log(precioTotal);
     } else if (categoria == 3) {
-        precioTotal = (precioTicket * 15) / 100;
+        precioTotal = (precioTicket * 80) / 100;
 
         console.log(precioTotal);
     } else {
